@@ -97,7 +97,7 @@ class LLMClient:
                     )
                     
                     response = client.chat.completions.create(
-                        model=config.get("model_name", "glm-4.6"),
+                        model=config.get("model_name", "glm-4v-plus-0111"),
                         messages=[
                             {"role": "system", "content": system_msg},
                             {"role": "user", "content": prompt}
