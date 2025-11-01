@@ -12,7 +12,7 @@
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_mac/AutoSTAT-1.0.0-mac.zip">Download Mac</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.0-win64.zip">Download Win</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/README_eng.md">README Eng</a>]
-[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.jpg">WeChat</a>]
+[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png">WeChat</a>]
 <br>
 
 
