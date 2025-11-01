@@ -31,7 +31,7 @@ MODEL_CONFIGS = {
         "is_preset": True,
     },
     "智谱AI": {
-        "api_base": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+        "api_base": "https://open.bigmodel.cn/api/paas/v4",
         "model_name": "glm-4v-plus-0111",
         "api_type": "zhipu",  # 智谱 AI 有自己的客户端
         "is_preset": True,
