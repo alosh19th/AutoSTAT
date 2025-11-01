@@ -23,6 +23,9 @@ We are building a beginner-friendly framework that covers the end-to-end data an
 
 ## What's New:
 
+***11/01/2025***
+1. A [WeChat](https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png) group is now available. Feel free to join us!
+
 ***10/31/2025***
 1. Released AutoSTAT v1.0.0 🎉
 

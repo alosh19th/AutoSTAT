@@ -23,6 +23,9 @@ AutoSTAT，致力于成为用户数据分析的 copilot 。
 
 ## What's New:
 
+***11/01/2025***
+  1. 我们建立了一个[微信讨论群](https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png)，欢迎大家一起来玩！
+
 ***10/31/2025***
   1. 发布版本 AutoSTAT v1.0.0 🎉
 
