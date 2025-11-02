@@ -11,7 +11,7 @@
 [<a href="https://autostat.cc/docs/">Docs</a>]
 [<a href="https://huggingface.co/spaces/ElvisWang111/AutoSTAT">Demo</a>]
 [<a href="https://autostat.cc">Web</a>]
-[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_mac/AutoSTAT-1.0.0-mac.zip">Download Mac</a>]
+[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_mac/AutoSTAT-1.0.1-mac.zip">Download Mac</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.2-win64.zip">Download Win</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png">WeChat</a>]
 <br>
