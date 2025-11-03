@@ -10,7 +10,7 @@
 [<a href="https://huggingface.co/spaces/ElvisWang111/AutoSTAT">Demo</a>]
 [<a href="https://autostat.cc">Web</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_mac/AutoSTAT-1.0.1-mac.zip">Download Mac</a>]
-[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.2-win64.zip">Download Win</a>]
+[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.3-win64.zip">Download Win</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/README_eng.md">README Eng</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png">WeChat</a>]
 <br>
@@ -76,7 +76,7 @@ AutoSTAT，致力于成为用户数据分析的 copilot 。
 <tr>
 
 <td align="center" width="200">
-  <a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.2-win64.zip">
+  <a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.3-win64.zip">
     <img src="https://img.shields.io/badge/Windows%20Installer-143a5f?style=for-the-badge&logo=windows&logoColor=white" />
   </a>
   <br />
