@@ -26,6 +26,8 @@ class PlannerAgent(LLMClient):
         self.switched_modeling = False
         self.switched_report = False
 
+        self.plan = None
+
 
     def self_driving(self, df, user_input=None) -> str:
 
@@ -74,6 +76,51 @@ class PlannerAgent(LLMClient):
         self.vis_auto = bool(plan_dict.get("vis_auto", False))
         self.modeling_auto = bool(plan_dict.get("modeling_auto", False))
         self.report_auto = bool(plan_dict.get("report_auto", False))
+    
+        plan = self.analysis_path(df)
+
+
+    def analysis_path(self, df) -> str:
+
+        prompt = (
+            f"下面是一个数据集的基本信息\n\n"
+            f"- 数据维度：{df.shape[0]} 行 × {df.shape[1]} 列\n"
+            f"- 列名和数据类型：{dict(zip(df.columns.tolist(), df.dtypes.astype(str).tolist()))}\n"
+            f"- 前 5 行样本：\n{df.head().to_dict(orient='list')}\n\n"
+        )
+
+        if st.session_state.preference_select:
+            prompt += f"以下是用户的分析偏好设置：{st.session_state.preference_select}”。\n\n"
+        if st.session_state.additional_preference:
+            prompt += f"用户提供了以下建模目的与特殊需求：{st.session_state.additional_preference}，务必满足，高优先级”。\n\n"
+
+        prompt += f"""
+        你现在是一名资深的数据科学与统计建模专家，请基于上面提供的数据集特征与用户需求，
+        以“专家决策者”的角度做出全面、严谨、具解释性的综合判断。
+
+        在你已经给出的 5 项自动化开关决策中：
+        1. loading_auto —— 是否需要对数据列名进行初步分析？ 你的选择：{self.loading_auto}
+        2. prep_auto —— 是否需要做数据预处理或清洗？ 你的选择：{self.prep_auto}
+        3. vis_auto —— 是否需要做数据可视化？ 你的选择：{self.vis_auto}
+        4. modeling_auto —— 是否需要建模或统计分析？ 你的选择：{self.modeling_auto}
+        5. report_auto —— 是否需要生成分析报告？ 你的选择：{self.report_auto}
+
+        请按照专家的水准，详细、系统性地阐述你的分析思路，并逐项解释你为何做出这些选择。
+
+        你的回答必须：
+        - 展现全局视角，而非仅局部判断；
+        - 给出清晰的推理链，而非简单理由；
+        - 指出每个决策的必要性、替代方案及其风险；
+        - 使用专业术语但保持可读性强；
+        - 说明如果不做该步骤会导致哪些问题（反事实解释）。
+
+        回答请结构化呈现。
+        """
+        
+        plan = self.call(prompt)
+        self.plan = plan
+
+        return self.plan
 
 
     def finish_loading_auto(self) -> str:

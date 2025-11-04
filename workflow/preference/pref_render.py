@@ -5,7 +5,9 @@ def preferences_select():
 
     modeling_requirements = st.text_area(
         "请描述你的数据分析目标与需求",
-        placeholder="例如：请帮我对数据进行可视化", height=200
+        placeholder="例如：请帮我对数据进行可视化",
+        height=200,
+        key="modeling_requirements"
     )
     st.session_state.additional_preference = modeling_requirements
 
@@ -52,7 +54,7 @@ def preferences_select():
         )
 
     preferences = None
-    if st.button("▶️ 保存偏好设置"):
+    if st.button("▶️ 保存偏好设置", use_container_width=True):
         preferences = {
             "报告风格": report_style,
             "模型偏好": model_pref,
@@ -68,14 +70,29 @@ def preferences_select():
     return preferences
 
 
+def prep_chat(agent):
+    """渲染对话式建议区"""
+
+    with st.chat_message("assistant"):
+        st.write("我是 Autostat 自动模式决策助手，很高兴为您服务！\n\n"
+            "您可以在左侧边栏开启自动模式，我会协助您决策并一键完成所有分析")
+
+    if agent.plan is not None:
+        st.chat_message("assistant").write(agent.plan)
+  
+
 if __name__ == "__main__":
 
     st.title("偏好设置")
     st.markdown("---")
 
     c = st.columns(2)
+
+    planner = st.session_state.planner_agent
+
     with c[0].expander('偏好设置', True):
         preferences_select()
-
+    with c[1].expander('自动模式决策报告', True):
+        prep_chat(planner)
 
 
