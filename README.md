@@ -23,6 +23,10 @@ AutoSTAT，致力于成为用户数据分析的 copilot 。
 
 ## What's New:
 
+***11/04/2025***
+  1. 操作[演示视频](https://www.autostat.cc)，现已上线！
+  2. 我们上线了一个长期开放的[用户体验问卷](https://www.wenjuan.com/s/UZBZJvmF2YB/)，期待你的反馈！
+
 ***11/01/2025***
   1. 我们建立了一个[微信讨论群](https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png)，欢迎大家一起来玩！
 
