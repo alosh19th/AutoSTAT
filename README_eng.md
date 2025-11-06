@@ -12,7 +12,7 @@
 [<a href="https://huggingface.co/spaces/ElvisWang111/AutoSTAT">Demo</a>]
 [<a href="https://autostat.cc">Web</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_mac/AutoSTAT-1.0.2-mac.zip">Download Mac</a>]
-[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.4-win64.zip">Download Win</a>]
+[<a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.5-win64.zip">Download Win</a>]
 [<a href="https://github.com/Jiaye-s-Group/AutoSTAT/blob/master/logo/wechatgroup.png">WeChat</a>]
 <br>
 
@@ -75,7 +75,7 @@ We are building a beginner-friendly framework that covers the end-to-end data an
 <table>
 <tr>
 <td align="center">
-  <a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.4-win64.zip">
+  <a href="https://github.com/Jiaye-s-Group/AutoSTAT/releases/download/v1.0.0_win/AutoSTAT-1.0.5-win64.zip">
     <img src="https://img.shields.io/badge/Windows%20Installer-143a5f?style=for-the-badge&logo=windows&logoColor=white" />
   </a>
   <br />
