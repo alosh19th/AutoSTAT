@@ -28,12 +28,12 @@ echo "激活环境中..."
 source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate "$ENV_NAME"
 
-echo "正在使用 pip 安装 requirements.txt ..."
-if [ -f "requirements.txt" ]; then
+echo "正在使用 pip 安装 requirements_mac.txt ..."
+if [ -f "requirements_mac.txt" ]; then
     pip install --upgrade pip
-    pip install -r requirements.txt
+    pip install -r requirements_mac.txt
 else
-    echo "⚠️ 未找到 requirements.txt，跳过依赖安装。"
+    echo "⚠️ 未找到 requirements_mac.txt，跳过依赖安装。"
 fi
 
 echo "正在安装 Playwright ..."
