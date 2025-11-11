@@ -61,7 +61,7 @@ We are building a beginner-friendly framework that covers the end-to-end data an
    3. **Install dependencies**:
 
    ```bash
-   # For Mac
+   # For Mac / Linux 
    pip install -r requirements_mac.txt
    # For Win
    pip install -r requirements_win.txt
