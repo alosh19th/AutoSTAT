@@ -65,7 +65,7 @@ AutoSTAT，致力于成为用户数据分析的 copilot 。
    3. **安装依赖**：
 
    ```bash
-   # Mac 用户
+   # Mac / Linux 用户
    pip install -r requirements_mac.txt
    # Win 用户
    pip install -r requirements_win.txt
